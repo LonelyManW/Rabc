@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+    <OutputPath>..\Rabc.Core.Api\bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rabc.Core.IServices\Rabc.Core.IServices.csproj" />
+    <ProjectReference Include="..\Rabc.Core.Repository\Rabc.Core.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
